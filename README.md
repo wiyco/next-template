@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# next-template
 
-## Getting Started
+This project was created by `npx create-next-app@latest` command.
 
-First, run the development server:
+[Next.js](https://github.com/vercel/next.js) framework starter repository.
+
+## Docs
+
+- [Next.js](https://nextjs.org/docs)
+
+## Development
+
+First, you must install packages.
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm i
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Packages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. [clsx & tailwind-merge](#1-clsx--tailwind-merge)
+2. [nextui](#2-nextui)
+3. [framer-motion](#3-framer-motion)
+4. [swr](#4-swr)
+5. [react-hook-form](#5-react-hook-form)
+6. [zod](#6-zod)
+7. [@hookform/resolvers](#7-hookformresolvers)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 1. clsx & tailwind-merge
 
-## Learn More
+By using these two packages, you can concatenate class names and prevent duplication in Tailwind.
 
-To learn more about Next.js, take a look at the following resources:
+> [!NOTE]
+>
+> The script is located in `src/utils/cn.ts`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2. [nextui](https://nextui.org/docs/guide/introduction)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+I love this UI library.
 
-## Deploy on Vercel
+### 3. [framer-motion](https://www.framer.com/motion)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Love ❤️
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 4. [swr](https://swr.vercel.app)
+
+Useful libraries for client-side fetching (means: `"use client"`).
+
+### 5. [react-hook-form](https://react-hook-form.com/docs)
+
+It's foolish to handle form control without using this library.
+
+### 6. [zod](https://zod.dev)
+
+The use cases are endless, from server-side type validation to form validation.
+
+### 7. [@hookform/resolvers](https://www.npmjs.com/package/@hookform/resolvers)
+
+Essential libraries for validation checks (hooks) by combining react-hook-form and zod.
+
+---
+
+🐢

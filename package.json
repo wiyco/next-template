@@ -1,26 +1,54 @@
 {
   "name": "next-template",
-  "version": "0.1.0",
+  "description": "Boilerplate of Next.js project with SWR, Lint, TypeScript, SASS, Tailwind, NextUI, Framer Motion, CI/CD, and more.",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "eslint:fix": "eslint ./src --ext .js,jsx,.ts,.tsx --fix",
+    "stylelint:fix": "stylelint ./src/**/*.{css,scss} --fix",
+    "prettier:fix": "prettier --check --write './src/**/*.{js,jsx,ts,tsx,css,scss,md}'",
+    "format": "npm run eslint:fix && npm run stylelint:fix && npm run prettier:fix"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.4.0",
+    "@nextui-org/react": "^2.3",
+    "clsx": "^2",
+    "framer-motion": "^11.2",
+    "next": "^14.2",
+    "next-themes": "^0",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.3"
+    "react-hook-form": "^7",
+    "swr": "^2",
+    "tailwind-merge": "^2",
+    "zod": "^3"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
+    "@typescript-eslint/eslint-plugin": "^7",
+    "@typescript-eslint/parser": "^7",
     "eslint": "^8",
-    "eslint-config-next": "14.2.3"
+    "eslint-config-next": "^14.2",
+    "eslint-config-prettier": "^9",
+    "eslint-plugin-import": "^2",
+    "eslint-plugin-simple-import-sort": "^12",
+    "eslint-plugin-unused-imports": "^3",
+    "postcss": "^8",
+    "prettier": "^3",
+    "prettier-plugin-tailwindcss": "^0",
+    "sass": "^1",
+    "stylelint": "^16",
+    "stylelint-config-recess-order": "^5",
+    "stylelint-config-standard": "^36",
+    "stylelint-config-standard-scss": "^13",
+    "stylelint-scss": "^6",
+    "tailwindcss": "^3",
+    "typescript": "^5"
   }
 }
