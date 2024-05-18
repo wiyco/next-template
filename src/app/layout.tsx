@@ -7,7 +7,7 @@ import { Provider } from "./provider";
 export const metadata: Metadata = {
   title: "Next.js Template",
   description:
-    "Boilerplate of Next.js project with SWR, Lint, TypeScript, SASS, Tailwind, NextUI, Framer Motion, CI/CD, and more.",
+    "Boilerplate of Next.js project with Lint, TypeScript, SASS, Tailwind, NextUI, Framer Motion, React Hook Form, Zod, SWR and more.",
 };
 
 export default function RootLayout({
