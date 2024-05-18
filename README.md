@@ -19,12 +19,13 @@ npm i
 ## Packages
 
 1. [clsx & tailwind-merge](#1-clsx--tailwind-merge)
-2. [nextui](#2-nextui)
-3. [framer-motion](#3-framer-motion)
-4. [swr](#4-swr)
-5. [react-hook-form](#5-react-hook-form)
-6. [zod](#6-zod)
-7. [@hookform/resolvers](#7-hookformresolvers)
+2. [next-themes](#2-next-themes)
+3. [nextui](#3-nextui)
+4. [framer-motion](#4-framer-motion)
+5. [swr](#5-swr)
+6. [react-hook-form](#6-react-hook-form)
+7. [zod](#7-zod)
+8. [@hookform/resolvers](#8-hookformresolvers)
 
 ### 1. clsx & tailwind-merge
 
@@ -34,27 +35,33 @@ By using these two packages, you can concatenate class names and prevent duplica
 >
 > The script is located in `src/utils/cn.ts`.
 
-### 2. [nextui](https://nextui.org/docs/guide/introduction)
+### 2. [next-themes](https://github.com/pacocoursey/next-themes)
+
+A library for applying color themes.
+
+Supports light mode and dark mode by default.
+
+### 3. [nextui](https://nextui.org/docs/guide/introduction)
 
 I love this UI library.
 
-### 3. [framer-motion](https://www.framer.com/motion)
+### 4. [framer-motion](https://www.framer.com/motion)
 
 Love ❤️
 
-### 4. [swr](https://swr.vercel.app)
+### 5. [swr](https://swr.vercel.app)
 
 Useful libraries for client-side fetching (means: `"use client"`).
 
-### 5. [react-hook-form](https://react-hook-form.com/docs)
+### 6. [react-hook-form](https://react-hook-form.com/docs)
 
 It's foolish to handle form control without using this library.
 
-### 6. [zod](https://zod.dev)
+### 7. [zod](https://zod.dev)
 
 The use cases are endless, from server-side type validation to form validation.
 
-### 7. [@hookform/resolvers](https://www.npmjs.com/package/@hookform/resolvers)
+### 8. [@hookform/resolvers](https://www.npmjs.com/package/@hookform/resolvers)
 
 Essential libraries for validation checks (hooks) by combining react-hook-form and zod.
 
