@@ -25,7 +25,6 @@ npm i
 5. [swr](#5-swr)
 6. [react-hook-form](#6-react-hook-form)
 7. [zod](#7-zod)
-8. [@hookform/resolvers](#8-hookformresolvers)
 
 ### 1. clsx & tailwind-merge
 
@@ -37,9 +36,9 @@ By using these two packages, you can concatenate class names and prevent duplica
 
 ### 2. [next-themes](https://github.com/pacocoursey/next-themes)
 
-A library for applying color themes.
+For applying color themes.
 
-Supports light mode and dark mode by default.
+This package supports light mode and dark mode by default.
 
 ### 3. [nextui](https://nextui.org/docs/guide/introduction)
 
@@ -51,19 +50,19 @@ Love ❤️
 
 ### 5. [swr](https://swr.vercel.app)
 
-Useful libraries for client-side fetching (means: `"use client"`).
+Useful libraries for client-side (means: `use client`) fetching.
 
 ### 6. [react-hook-form](https://react-hook-form.com/docs)
 
 It's foolish to handle form control without using this library.
 
+> [!IMPORTANT]
+>
+> [@hookform/resolvers](https://www.npmjs.com/package/@hookform/resolvers) required to use [Zod](#7-zod) for form validation. (already included in the package)
+
 ### 7. [zod](https://zod.dev)
 
-The use cases are endless, from server-side type validation to form validation.
-
-### 8. [@hookform/resolvers](https://www.npmjs.com/package/@hookform/resolvers)
-
-Essential libraries for validation checks (hooks) by combining react-hook-form and zod.
+The use cases are endless, from server-side type validation to client-side form validation.
 
 ---
 
