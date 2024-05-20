@@ -64,6 +64,10 @@ It's foolish to handle form control without using this library.
 
 The use cases are endless, from server-side type validation to client-side form validation.
 
+### 8. [Vitest](https://vitest.dev/guide)
+
+This package is used for testing (such as unit tests).
+
 ---
 
 🐢
