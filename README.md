@@ -25,6 +25,7 @@ npm i
 5. [swr](#5-swr)
 6. [react-hook-form](#6-react-hook-form)
 7. [zod](#7-zod)
+8. [vitest](#8-vitest)
 
 ### 1. clsx & tailwind-merge
 
@@ -64,7 +65,7 @@ It's foolish to handle form control without using this library.
 
 The use cases are endless, from server-side type validation to client-side form validation.
 
-### 8. [Vitest](https://vitest.dev/guide)
+### 8. [vitest](https://vitest.dev/guide)
 
 This package is used for testing (such as unit tests).
 
