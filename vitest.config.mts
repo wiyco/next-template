@@ -13,5 +13,6 @@ export default defineConfig({
       "test/**/*.test.{js,ts,jsx,tsx}",
       "src/**/*.test.{js,ts,jsx,tsx}",
     ],
+    globals: true,
   },
 });
