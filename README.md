@@ -47,7 +47,7 @@ I love this UI library.
 
 ### 4. [framer-motion](https://www.framer.com/motion)
 
-Love ❤️
+Love 🤍
 
 ### 5. [swr](https://swr.vercel.app)
 
@@ -68,6 +68,10 @@ The use cases are endless, from server-side type validation to client-side form 
 ### 8. [vitest](https://vitest.dev/guide)
 
 This package is used for testing (such as unit tests).
+
+> [!IMPORTANT]
+>
+> To perform UI testing, you need to configure the [@testing-library/jest-dom](https://testing-library.com/docs/ecosystem-jest-dom) package and set up [Vitest config](https://vitest.dev/config/#globals).
 
 ---
 
