@@ -1,6 +1,6 @@
 import { describe, expect, test } from "vitest";
 
-import { numToShortString } from "@/utils/converter/num_to_short_string";
+import { numToShortString } from "@/utils/converter";
 
 /**
  * Number abbreviation test
