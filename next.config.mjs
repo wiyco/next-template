@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 const nextConfig = {
   /** @see {@link https://nextjs.org/docs/app/building-your-application/styling/sass} */
   sassOptions: {
-    includePaths: [path.join(__dirname, "styles")],
+    includePaths: [path.join(__dirname, "src/styles")],
   },
   /** For GitHub Pages */
   output: "export",
