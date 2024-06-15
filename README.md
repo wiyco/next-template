@@ -26,6 +26,7 @@ npm i
 6. [react-hook-form](#6-react-hook-form)
 7. [zod](#7-zod)
 8. [vitest](#8-vitest)
+9. [storybook](#9-storybook)
 
 ### 1. clsx & tailwind-merge
 
@@ -47,7 +48,7 @@ I love this UI library.
 
 ### 4. [framer-motion](https://www.framer.com/motion)
 
-Love 🤍
+Animations.
 
 ### 5. [swr](https://swr.vercel.app)
 
@@ -72,6 +73,12 @@ This package is used for testing (such as unit tests).
 > [!IMPORTANT]
 >
 > To perform UI testing, you need to configure the [@testing-library/jest-dom](https://testing-library.com/docs/ecosystem-jest-dom) package and set up [Vitest config](https://vitest.dev/config/#globals).
+
+### 9. [storybook](https://storybook.js.org/docs/get-started)
+
+Use for visual testing of UI.
+
+Useful for automatic docs generation of components, testing of theme colors, and testing with various viewports.
 
 ---
 
