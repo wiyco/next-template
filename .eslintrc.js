@@ -5,6 +5,7 @@ const eslintConfig = {
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
+    "plugin:storybook/recommended",
   ],
   parser: "@typescript-eslint/parser",
   plugins: ["unused-imports", "simple-import-sort", "import"],
