@@ -16,7 +16,9 @@
     "fix:stylelint": "stylelint ./src/**/*.{css,scss} --fix",
     "fix:prettier": "prettier --check --write './src/**/*.{js,jsx,ts,tsx,css,scss,md}'",
     "format": "npm run fix:eslint && npm run fix:stylelint && npm run fix:prettier",
-    "test": "vitest"
+    "test": "vitest",
+    "storybook": "storybook dev -p 6006",
+    "storybook:build": "storybook build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3",
@@ -33,6 +35,15 @@
     "zod": "^3"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^1",
+    "@storybook/addon-essentials": "^8",
+    "@storybook/addon-interactions": "^8",
+    "@storybook/addon-links": "^8",
+    "@storybook/addon-onboarding": "^8",
+    "@storybook/blocks": "^8",
+    "@storybook/nextjs": "^8",
+    "@storybook/react": "^8",
+    "@storybook/test": "^8",
     "@testing-library/jest-dom": "^6",
     "@testing-library/react": "^15",
     "@types/node": "^20",
@@ -47,12 +58,14 @@
     "eslint-config-prettier": "^9",
     "eslint-plugin-import": "^2",
     "eslint-plugin-simple-import-sort": "^12",
+    "eslint-plugin-storybook": "^0",
     "eslint-plugin-unused-imports": "^3",
     "jsdom": "^24",
     "postcss": "^8",
     "prettier": "^3",
     "prettier-plugin-tailwindcss": "^0",
     "sass": "^1",
+    "storybook": "^8",
     "stylelint": "^16",
     "stylelint-config-recess-order": "^5",
     "stylelint-config-standard": "^36",
