@@ -5,6 +5,8 @@ const eslintConfig = {
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier",
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended",
     "plugin:storybook/recommended",
   ],
   parser: "@typescript-eslint/parser",
