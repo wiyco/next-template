@@ -21,7 +21,8 @@
       "@constants/*": ["./src/_constants/*"],
       "@styles/*": ["./src/styles/*"],
       "@types/*": ["./src/types/*"],
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@assets/*": ["./public/assets/*"]
     }
   },
   "include": ["svgr.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
