@@ -26,7 +26,19 @@ const nextConfig = {
         test: /\.svg$/i,
         issuer: fileLoaderRule.issuer,
         resourceQuery: { not: [...fileLoaderRule.resourceQuery.not, /url/] },
-        use: ["@svgr/webpack"],
+        use: [
+          {
+            loader: "@svgr/webpack",
+            /** @see {@link https://react-svgr.com/docs/options} */
+            options: {
+              icon: "1.5em",
+              memo: true,
+              replaceAttrValues: {
+                "#000": "currentColor",
+              },
+            },
+          },
+        ],
       }
     );
     fileLoaderRule.exclude = /\.svg$/i;
