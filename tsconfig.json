@@ -18,10 +18,10 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"],
       "@constants/*": ["./src/_constants/*"],
       "@styles/*": ["./src/styles/*"],
-      "@types/*": ["./src/types/*"]
+      "@types/*": ["./src/types/*"],
+      "@/*": ["./src/*"]
     }
   },
   "include": ["svgr.d.ts", "next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
