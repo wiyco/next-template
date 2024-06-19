@@ -19,7 +19,8 @@ export default function Page() {
   const searchParams = useSearchParams();
   const { data, error, isLoading } = useSWR<{ message: string; t: string }>(
     `/api?t=${searchParams.get("t") ?? ""}`,
-    fetcher
+    fetcher,
+    { revalidateOnFocus: false }
   );
 
   if (isLoading)
