@@ -1,6 +1,5 @@
 "use client";
 
-import { Code } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import { Ballet } from "next/font/google";
 import { useSearchParams } from "next/navigation";
@@ -57,7 +56,7 @@ export default function Page() {
             parameter in the URL!
           </p>
           <p>
-            Example: <Code size="sm">?t=1000</Code>
+            Example: <code>?t=1000</code>
           </p>
         </motion.div>
       </section>
