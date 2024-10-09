@@ -2,7 +2,7 @@ import "@styles/globals.scss";
 
 import type { Metadata } from "next";
 
-import { Provider } from "./provider";
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "Next.js Template",
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html>
       <body>
-        <Provider
+        <Providers
           nextThemeProviderProps={{
             attribute: "class",
             defaultTheme: "system",
@@ -27,7 +27,7 @@ export default function RootLayout({
           }}
         >
           {children}
-        </Provider>
+        </Providers>
       </body>
     </html>
   );
