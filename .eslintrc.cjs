@@ -31,6 +31,9 @@ const eslintConfig = {
     "import/newline-after-import": "warn",
     "import/no-duplicates": "warn",
   },
+  settings: {
+    "import/internal-regex": "^@/",
+  },
   parserOptions: {
     sourceType: "module",
     ecmaVersion: "latest",
