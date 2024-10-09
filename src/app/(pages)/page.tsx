@@ -1,6 +1,5 @@
 "use client";
 
-import CreativeCommons from "@assets/icons/creative-commons.svg";
 import { Code } from "@nextui-org/react";
 import { motion } from "framer-motion";
 import { Ballet } from "next/font/google";
@@ -61,11 +60,6 @@ export default function Page() {
             Example: <Code size="sm">?t=1000</Code>
           </p>
         </motion.div>
-      </section>
-      <section className="grid place-content-center">
-        <span className="text-base">
-          <CreativeCommons />
-        </span>
       </section>
     </main>
   );
