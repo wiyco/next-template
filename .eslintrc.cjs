@@ -11,6 +11,9 @@ const eslintConfig = {
   ],
   parser: "@typescript-eslint/parser",
   plugins: ["unused-imports", "simple-import-sort", "import"],
+  settings: {
+    "import/internal-regex": "^@/",
+  },
   rules: {
     /** @see {@link https://www.npmjs.com/package/eslint-plugin-unused-imports} */
     "@typescript-eslint/no-unused-vars": "off",
@@ -30,9 +33,6 @@ const eslintConfig = {
     "import/first": "warn",
     "import/newline-after-import": "warn",
     "import/no-duplicates": "warn",
-  },
-  settings: {
-    "import/internal-regex": "^@/",
   },
   parserOptions: {
     sourceType: "module",
