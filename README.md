@@ -20,13 +20,12 @@ npm i
 
 1. [clsx & tailwind-merge](#1-clsx--tailwind-merge)
 2. [next-themes](#2-next-themes)
-3. [nextui](#3-nextui)
-4. [framer-motion](#4-framer-motion)
-5. [swr](#5-swr)
-6. [react-hook-form](#6-react-hook-form)
-7. [zod](#7-zod)
-8. [vitest](#8-vitest)
-9. [storybook](#9-storybook)
+3. [framer-motion](#4-framer-motion)
+4. [swr](#5-swr)
+5. [react-hook-form](#6-react-hook-form)
+6. [zod](#7-zod)
+7. [vitest](#8-vitest)
+8. [storybook](#9-storybook)
 
 ### 1. clsx & tailwind-merge
 
@@ -42,19 +41,15 @@ For applying color themes.
 
 This package supports light mode and dark mode by default.
 
-### 3. [nextui](https://nextui.org/docs/guide/introduction)
-
-I love this UI library.
-
-### 4. [framer-motion](https://www.framer.com/motion)
+### 3. [framer-motion](https://www.framer.com/motion)
 
 Animations.
 
-### 5. [swr](https://swr.vercel.app)
+### 4. [swr](https://swr.vercel.app)
 
 Useful libraries for client-side (means: `use client`) fetching.
 
-### 6. [react-hook-form](https://react-hook-form.com/docs)
+### 5. [react-hook-form](https://react-hook-form.com/docs)
 
 It's foolish to handle form control without using this library.
 
@@ -62,11 +57,11 @@ It's foolish to handle form control without using this library.
 >
 > [@hookform/resolvers](https://www.npmjs.com/package/@hookform/resolvers) required to use [Zod](#7-zod) for form validation. (already included in the package)
 
-### 7. [zod](https://zod.dev)
+### 6. [zod](https://zod.dev)
 
 The use cases are endless, from server-side type validation to client-side form validation.
 
-### 8. [vitest](https://vitest.dev/guide)
+### 7. [vitest](https://vitest.dev/guide)
 
 This package is used for testing (such as unit tests).
 
@@ -74,7 +69,7 @@ This package is used for testing (such as unit tests).
 >
 > To perform UI testing, you need to configure the [@testing-library/jest-dom](https://testing-library.com/docs/ecosystem-jest-dom) package and set up [Vitest config](https://vitest.dev/config/#globals).
 
-### 9. [storybook](https://storybook.js.org/docs/get-started)
+### 8. [storybook](https://storybook.js.org/docs/get-started)
 
 Use for visual testing of UI.
 
