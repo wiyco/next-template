@@ -22,7 +22,6 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3",
-    "@nextui-org/react": "^2",
     "clsx": "^2",
     "framer-motion": "^11",
     "next": "^14",
