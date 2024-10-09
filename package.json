@@ -44,7 +44,6 @@
     "@storybook/nextjs": "^8",
     "@storybook/react": "^8",
     "@storybook/test": "^8",
-    "@svgr/webpack": "^8",
     "@testing-library/jest-dom": "^6",
     "@testing-library/react": "^16",
     "@types/node": "^20",
