@@ -20,12 +20,12 @@ npm i
 
 1. [clsx & tailwind-merge](#1-clsx--tailwind-merge)
 2. [next-themes](#2-next-themes)
-3. [framer-motion](#4-framer-motion)
-4. [swr](#5-swr)
-5. [react-hook-form](#6-react-hook-form)
-6. [zod](#7-zod)
-7. [vitest](#8-vitest)
-8. [storybook](#9-storybook)
+3. [framer-motion](#3-framer-motion)
+4. [swr](#4-swr)
+5. [react-hook-form](#5-react-hook-form)
+6. [zod](#6-zod)
+7. [vitest](#7-vitest)
+8. [storybook](#8-storybook)
 
 ### 1. clsx & tailwind-merge
 
