@@ -5,7 +5,7 @@ pre-commit:
   commands:
     eslint:
       glob: "*.{js,jsx,ts,tsx}"
-      run: npx eslint {staged_files} --fix
+      run: 'npx eslint "{staged_files}" --fix'
       stage_fixed: true
       skip:
         - merge
@@ -13,7 +13,7 @@ pre-commit:
 
     stylelint:
       glob: "*.{css,scss}"
-      run: npx stylelint {staged_files} --fix
+      run: 'npx stylelint "{staged_files}" --fix'
       stage_fixed: true
       skip:
         - merge
@@ -21,7 +21,7 @@ pre-commit:
 
     prettier:
       glob: "*.{js,jsx,ts,tsx,css,scss,md}"
-      run: npx prettier {staged_files} --write
+      run: 'npx prettier "{staged_files}" --write'
       stage_fixed: true
       skip:
         - merge
