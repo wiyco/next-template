@@ -11,7 +11,7 @@
  * @param num - Number to convert
  * @returns Short string representation of the number
  */
-function numToShortString(num: number): string {
+export function numToShortString(num: number): string {
   const numLength = num.toString().length;
   switch (numLength) {
     case 4:
@@ -41,5 +41,3 @@ function numToShortString(num: number): string {
       return num.toString();
   }
 }
-
-export { numToShortString };
