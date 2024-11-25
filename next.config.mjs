@@ -10,6 +10,17 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, "src/styles")],
   },
+  experimental: {
+    /** @see {@link https://nextjs.org/docs/app/api-reference/next-config-js/turbo#configuring-webpack-loaders} */
+    turbo: {
+      rules: {
+        "*.scss": {
+          loaders: ["sass-loader"],
+          as: "*.css",
+        },
+      },
+    },
+  },
 };
 
 export default nextConfig;
