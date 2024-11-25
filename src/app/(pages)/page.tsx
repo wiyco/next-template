@@ -1,65 +1,39 @@
-"use client";
-
-import { motion } from "framer-motion";
-import { Ballet } from "next/font/google";
-import { useSearchParams } from "next/navigation";
-import useSWR from "swr";
-
-import { FullScreen } from "@/components/FullScreen";
-import { fetcher } from "@/lib/swr";
-import { cn } from "@/utils/cn";
-
-const ballet = Ballet({
-  subsets: ["latin"],
-  display: "swap",
-});
-
 export default function Page() {
-  const searchParams = useSearchParams();
-  const { data, error, isLoading } = useSWR<{ message: string; t: string }>(
-    `/api?t=${searchParams.get("t") ?? ""}`,
-    fetcher,
-    { revalidateOnFocus: false }
-  );
-
-  if (isLoading)
-    return (
-      <FullScreen>
-        <p>Loading...</p>
-      </FullScreen>
-    );
-  if (error)
-    return (
-      <FullScreen>
-        <p>Error!</p>
-      </FullScreen>
-    );
-
   return (
-    <main className="grid h-full min-h-dvh w-full place-content-center gap-9 p-6 text-neutral-800 dark:text-neutral-300">
-      <h1 className={cn(ballet.className, "text-center text-5xl")}>
-        Hello, World!
-      </h1>
-      <section className="grid place-content-center gap-6 text-center">
-        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-          {`'${data?.message}' from api!`}
-        </motion.p>
-        <motion.div
-          className="grid place-content-center gap-3"
-          initial={{ rotateX: 180 }}
-          animate={{ rotateX: 0 }}
-          transition={{ delay: 0.3 }}
-        >
-          <h2 className="text-xl">{`Sleep time is ${data?.t}ms!`}</h2>
-          <p>
-            If you want to specify the sleep time of api, please specify the
-            parameter in the URL!
-          </p>
-          <p>
-            Example: <code>?t=1000</code>
-          </p>
-        </motion.div>
-      </section>
-    </main>
+    <div className="p-4 font-sans">
+      <h1 className="text-3xl">Welcome to Next.js</h1>
+      <ul className="mt-4 list-disc space-y-2 pl-6">
+        <li>
+          <a
+            className="text-blue-700 underline visited:text-purple-900"
+            target="_blank"
+            href="https://nextjs.org/docs/app/getting-started/installation"
+            rel="noreferrer"
+          >
+            Getting Started
+          </a>
+        </li>
+        <li>
+          <a
+            className="text-blue-700 underline visited:text-purple-900"
+            target="_blank"
+            href="https://nextjs.org/learn"
+            rel="noreferrer"
+          >
+            Learn Next.js
+          </a>
+        </li>
+        <li>
+          <a
+            className="text-blue-700 underline visited:text-purple-900"
+            target="_blank"
+            href="https://nextjs.org/docs"
+            rel="noreferrer"
+          >
+            Next.js Docs
+          </a>
+        </li>
+      </ul>
+    </div>
   );
 }
