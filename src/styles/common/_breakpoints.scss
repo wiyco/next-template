@@ -1,6 +1,13 @@
 @use "sass:map";
 
-/* Breakpoints: https://tailwindcss.com/docs/responsive-design */
+/*
+ * Breakpoints: https://tailwindcss.com/docs/responsive-design
+ * Usage:
+ * @use "@/styles/common/breakpoints";
+ * @include media("sm") {
+ *   // Styles here
+ * }
+ */
 $breakpoints: (
   sm: "(min-width: 640px)",
   md: "(min-width: 768px)",
