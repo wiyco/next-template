@@ -5,9 +5,8 @@ import type { Metadata } from "next";
 import { Providers } from "./providers";
 
 export const metadata: Metadata = {
-  title: "Next.js Template",
-  description:
-    "Boilerplate of Next.js project with Lint, TypeScript, SASS, Tailwind, NextUI, Framer Motion, React Hook Form, Zod, SWR, Vitest, Storybook and more.",
+  title: "New Next.js App",
+  description: "Welcome to Next.js!",
 };
 
 export default function RootLayout({
