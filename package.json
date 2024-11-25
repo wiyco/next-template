@@ -17,8 +17,8 @@
     "fix:prettier": "prettier --check --write './src/**/*.{js,jsx,ts,tsx,css,scss,md}'",
     "format": "npm run fix:eslint & npm run fix:stylelint & npm run fix:prettier",
     "test": "vitest",
-    "story": "storybook dev -p 6006",
-    "story:build": "storybook build"
+    "sb": "storybook dev -p 6006",
+    "sb:build": "storybook build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3",
