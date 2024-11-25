@@ -1,6 +1,5 @@
 {
   "name": "next-template",
-  "description": "Boilerplate of Next.js project with Lint, TypeScript, SASS, Tailwind, NextUI, Framer Motion, React Hook Form, Zod, SWR, Vitest, Storybook and more.",
   "version": "1.0.0",
   "private": true,
   "scripts": {
