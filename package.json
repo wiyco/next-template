@@ -15,7 +15,7 @@
     "fix:eslint": "eslint ./src --ext .js,jsx,.ts,.tsx --fix",
     "fix:stylelint": "stylelint ./src/**/*.{css,scss} --fix",
     "fix:prettier": "prettier --check --write './src/**/*.{js,jsx,ts,tsx,css,scss,md}'",
-    "format": "npm run fix:eslint && npm run fix:stylelint && npm run fix:prettier",
+    "format": "npm run fix:eslint & npm run fix:stylelint & npm run fix:prettier",
     "test": "vitest",
     "story": "storybook dev -p 6006",
     "story:build": "storybook build"
