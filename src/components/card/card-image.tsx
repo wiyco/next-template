@@ -86,6 +86,7 @@ const CardImage = forwardRef<HTMLImageElement, CardImageProps>(
         )}
         src={src}
         alt={alt}
+        fill
         {...props}
       />
     );
