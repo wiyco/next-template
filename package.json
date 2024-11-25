@@ -67,6 +67,7 @@
     "prettier": "^3",
     "prettier-plugin-tailwindcss": "^0",
     "sass": "^1",
+    "sass-loader": "^16",
     "storybook": "^8",
     "stylelint": "^16",
     "stylelint-config-recess-order": "^5",
