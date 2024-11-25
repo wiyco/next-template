@@ -1,4 +1,8 @@
-/* Easings: https://easings.net */
+/* Easings: https://easings.net
+ * Usage:
+ * @use "@/styles/common/easings";
+ * transition: all 0.3s $ease-in-out-cubic;
+ */
 
 /* Sine */
 $ease-in-sine: cubic-bezier(0.12, 0, 0.39, 0);
