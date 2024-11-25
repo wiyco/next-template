@@ -8,7 +8,16 @@ const config: Config = {
     "./stories/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      aspectRatio: {
+        "1/1": "1 / 1",
+        "4/3": "4 / 3",
+        "16/9": "16 / 9",
+        "19/10": "19 / 10",
+        "3/4": "3 / 4",
+        "9/16": "9 / 16",
+      },
+    },
   },
   darkMode: "class",
   plugins: [],
