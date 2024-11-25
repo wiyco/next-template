@@ -20,7 +20,7 @@ pre-commit:
         - rebase
 
     prettier:
-      glob: "*.{js,jsx,ts,tsx,css,scss,md}"
+      glob: "*.{js,jsx,ts,tsx,css,scss,md,mdx}"
       run: 'npx prettier "{staged_files}" --write'
       stage_fixed: true
       skip:
