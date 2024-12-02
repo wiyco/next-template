@@ -15,7 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html>
+    // Suppress hydration warning because we are using `next-themes` provider.
+    <html suppressHydrationWarning>
       <body>
         <Providers
           nextThemeProviderProps={{
