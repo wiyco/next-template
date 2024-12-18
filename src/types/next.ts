@@ -1,3 +1,5 @@
+import type { EmptyObject } from "./utils";
+
 /**
  * Next.js dynamic route segments.
  * @example
@@ -19,11 +21,13 @@ export type DynamicSegments<T extends string = "slug"> = {
  * @example
  * ```tsx
  * import type { SearchParams } from "@/types";
- * export default async function Page({ searchParams }: { searchParams: SearchParams }) {
+ * export default async function Page({ searchParams }: SearchParams<{ foo: string }>) {
  *   console.log(searchParams.foo);
  *   // => "bar"
  * }
  * ```
  * @see {@link https://nextjs.org/docs/app/api-reference/file-conventions/page#searchparams-optional}
  */
-export type SearchParams = { [key: string]: string | string[] | undefined };
+export type SearchParams<T extends object = EmptyObject> = {
+  searchParams: { [K in keyof T]: string | string[] | undefined };
+};
