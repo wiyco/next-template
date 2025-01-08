@@ -8,7 +8,7 @@ export type AnyObject = Record<string, unknown>;
  * Don't use `{}` as a type. `{}` actually means "any non-nullish value".
  * * If you want a type meaning "empty object", you probably want `Record<string, never>` instead.
  */
-export type EmptyObject = Record<string, never>;
+export type EmptyObject = Record<never, never>;
 
 /**
  * Don't use `{}` as a type. `{}` actually means "any non-nullish value".
