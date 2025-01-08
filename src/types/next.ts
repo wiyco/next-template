@@ -6,14 +6,14 @@ import type { EmptyObject } from "./utils";
  * ```tsx
  * import type { DynamicSegments } from "@/types";
  * export default async function Page({ params }: DynamicSegments<"slug">) {
- *   console.log(params.slug);
+ *   console.log((await params).slug);
  *   // => "foo"
  * }
  * ```
  * @see {@link https://nextjs.org/docs/app/building-your-application/routing/dynamic-routes}
  */
 export type DynamicSegments<T extends string = "slug"> = {
-  params: { [K in T]: string };
+  params: Promise<{ [K in T]: string }>;
 };
 
 /**
@@ -22,12 +22,12 @@ export type DynamicSegments<T extends string = "slug"> = {
  * ```tsx
  * import type { SearchParams } from "@/types";
  * export default async function Page({ searchParams }: SearchParams<{ foo: string }>) {
- *   console.log(searchParams.foo);
- *   // => "bar"
+ *   console.log((await searchParams).foo);
+ *   // => "bar" or ["bar", "baz"] or undefined
  * }
  * ```
  * @see {@link https://nextjs.org/docs/app/api-reference/file-conventions/page#searchparams-optional}
  */
 export type SearchParams<T extends object = EmptyObject> = {
-  searchParams: { [K in keyof T]: string | string[] | undefined };
+  searchParams: Promise<{ [K in keyof T]: string | string[] | undefined }>;
 };
