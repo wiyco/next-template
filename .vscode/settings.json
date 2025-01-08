@@ -6,7 +6,13 @@
     "source.fixAll.stylelint": "explicit",
     "source.organizeImports": "never"
   },
+  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
   "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true
+  },
+  "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2,
     "editor.insertSpaces": true
@@ -23,6 +29,7 @@
   },
   "css.validate": false,
   "scss.validate": false,
+  "stylelint.validate": ["css", "scss"],
   "[css]": {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.tabSize": 2,
@@ -33,6 +40,7 @@
   "editor.tabSize": 2,
   "editor.insertSpaces": true
   },
+  // Optional
   "[svg]": {
     "editor.tabSize": 2,
     "editor.insertSpaces": true
@@ -48,7 +56,5 @@
   "[markdown]": {
     "editor.tabSize": 2,
     "editor.insertSpaces": true
-  },
-  "eslint.validate": ["typescript", "typescriptreact"],
-  "stylelint.validate": ["css", "scss"]
+  }
 }
