@@ -3,7 +3,7 @@ import { twMerge } from "tailwind-merge";
 
 /**
  * Merges class names and tailwind classes.
- * @param classNames - Class names to merge.
+ * @param classNames Class names to merge.
  * @returns Merged class names.
  */
 export function cn(
