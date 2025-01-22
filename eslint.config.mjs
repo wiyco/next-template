@@ -27,20 +27,9 @@ const compat = new FlatCompat({
 const config = ts.config(
   {
     files: ["**/*.{js,jsx,ts,tsx}", "**/*.{cjs,mjs,cts,mts}"],
+  },
+  {
     ignores: [".next/"], // + Default ignores ["**/node_modules/", ".git/"]
-    settings: {
-      react: {
-        version: "detect",
-      },
-    },
-    rules: {
-      "@typescript-eslint/no-empty-object-type": [
-        "error",
-        {
-          allowWithName: "Props$", // Allow empty object types with a name ending with "Props".
-        },
-      ],
-    },
   },
   // plugin:@next/next/recommended
   // Do not use `next/core-web-vitals` because it has duplicate rules with `plugin:react/recommended`, `plugin:react-hooks/recommended`, etc.
@@ -53,6 +42,13 @@ const config = ts.config(
   react.configs.flat?.recommended ?? {},
   // plugin:react/jsx-runtime
   react.configs.flat?.["jsx-runtime"] ?? {},
+  {
+    settings: {
+      react: {
+        version: "detect",
+      },
+    },
+  },
   // plugin:react-hooks/recommended
   ...fixupConfigRules(compat.extends("plugin:react-hooks/recommended")), // Replace "plugin:" syntax when flat config is supported
   // plugin:jsx-a11y/recommended
@@ -111,9 +107,16 @@ const config = ts.config(
   },
   // prettier - Disable eslint rules that conflict with prettier.
   prettier,
+  // Custom rules
   {
     rules: {
       "@typescript-eslint/no-explicit-any": "warn",
+      "@typescript-eslint/no-empty-object-type": [
+        "error",
+        {
+          allowWithName: "Props$", // Allow empty object types with a name ending with "Props".
+        },
+      ],
     },
   }
 );
