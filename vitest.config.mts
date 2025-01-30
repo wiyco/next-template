@@ -4,7 +4,7 @@ import { defineConfig } from "vitest/config";
 
 export default defineConfig({
   /** @see {@link https://nextjs.org/docs/app/building-your-application/testing/vitest} */
-  plugins: [tsconfigPaths(), react()],
+  plugins: [react(), tsconfigPaths()],
   /** @see {@link https://vitest.dev/config} */
   test: {
     environment: "jsdom",

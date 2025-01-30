@@ -1,34 +1,36 @@
-# https://github.com/evilmartians/lefthook/blob/master/docs/configuration.md
-
 pre-commit:
+  piped: true
+  commands:
+    lint:
+      priority: 1
+      glob: "*.{js,jsx,ts,tsx,cjs,mjs,cts,mts,css,scss}"
+      run: pnpm lefthook run lint
+      stage_fixed: true
+
+    prettier:
+      priority: 2
+      glob: "*.{js,jsx,ts,tsx,cjs,mjs,cts,mts,css,scss,md,mdx,yaml,yml,json,html}"
+      run: |
+        pnpm prettier {staged_files} --log-level=warn --cache --write
+      stage_fixed: true
+
+lint:
   parallel: true
   commands:
     eslint:
       glob: "*.{js,jsx,ts,tsx,cjs,mjs,cts,mts}"
-      run: 'npx eslint "{staged_files}" --max-warnings=0 --cache'
+      run: |
+        pnpm eslint {staged_files} --max-warnings=0 --cache --fix
       stage_fixed: true
-      skip:
-        - merge
-        - rebase
 
     stylelint:
       glob: "*.{css,scss}"
-      run: 'npx stylelint "{staged_files}" --cache'
+      run: |
+        pnpm stylelint {staged_files} --max-warnings=0 --cache --fix
       stage_fixed: true
-      skip:
-        - merge
-        - rebase
-
-    prettier:
-      glob: "*.{js,jsx,ts,tsx,cjs,mjs,cts,mts,css,scss,md,mdx}"
-      run: 'npx prettier "{staged_files}" --cache'
-      stage_fixed: true
-      skip:
-        - merge
-        - rebase
 
 post-merge:
   commands:
-    npm:
-      glob: "{package.json,package-lock.json}"
-      run: npm i
+    pnpm:
+      glob: "{package.json,pnpm-lock.yaml}"
+      run: pnpm install
