@@ -3,36 +3,55 @@ on:
   pull_request:
     branches:
       - main
-    paths-ignore:
-      - "**/*.md"
-      - ".git*"
-      - ".vscode/**"
+    paths:
+      - "src/**"
+      - ".storybook/**"
+      - "stories/**"
+      - "package.json"
+      - "pnpm-lock.yaml"
+      - ".github/workflows/build.yml"
 
 jobs:
-  build:
-    name: npm run build
+  next:
+    name: Next.js
     runs-on: ubuntu-latest
     steps:
-      - name: Clone repository
+      - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Enable Corepack
+        run: corepack enable
 
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
-          cache: "npm"
+          node-version: "22"
+          cache: "pnpm"
 
-      - name: Cache packages
-        uses: actions/cache@v4
-        id: cache_npm_packages
-        env:
-          cache-name: cache-npm-packages
+      - name: Install dependencies
+        run: pnpm i --frozen-lockfile
+
+      - name: Build Next.js
+        run: pnpm next build
+
+  storybook:
+    name: Storybook
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
         with:
-          path: "**/node_modules"
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          node-version: "22"
+          cache: "pnpm"
 
-      - name: Install packages
-        if: ${{ steps.cache_npm_packages.outputs.cache-hit != 'true' }}
-        run: npm i
-      - name: Build
-        run: npm run build
+      - name: Install dependencies
+        run: pnpm i --frozen-lockfile
+
+      - name: Build Storybook
+        run: pnpm storybook build

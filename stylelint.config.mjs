@@ -7,11 +7,10 @@ const config = {
   ],
   plugins: ["stylelint-scss"],
   rules: {
-    "at-rule-no-unknown": null,
-    "scss/at-rule-no-unknown": [
+    "at-rule-no-deprecated": [
       true,
       {
-        ignoreAtRules: ["tailwind"],
+        ignoreAtRules: ["apply"], // Allow `@apply` directive
       },
     ],
   },

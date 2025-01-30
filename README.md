@@ -4,18 +4,18 @@
 
 ## Tech Stack
 
-| Environments                | Languages                  | Linters                                                                     | Frameworks   | Libraries                                                                      | Testing                             | CI/CD                 |
-| :-------------------------- | :------------------------- | :-------------------------------------------------------------------------- | :----------- | :----------------------------------------------------------------------------- | :---------------------------------- | :-------------------- |
-| ![node-logo]<br>![npm-logo] | ![ts-logo]<br>![sass-logo] | ![eslint-logo]<br>![stylelint-logo]<br>![prettier-logo]<br>![lefthook-logo] | ![next-logo] | ![react-logo]<br>![tailwind-logo]<br>![swr-logo]<br>![zod-logo]<br>![rhf-logo] | ![vitest-logo]<br>![storybook-logo] | ![githubactions-logo] |
+| Environments                 | Languages                  | Linters                                                                     | Frameworks   | Libraries                                                                      | Testing                             | CI/CD                 |
+| :--------------------------- | :------------------------- | :-------------------------------------------------------------------------- | :----------- | :----------------------------------------------------------------------------- | :---------------------------------- | :-------------------- |
+| ![node-logo]<br>![pnpm-logo] | ![ts-logo]<br>![sass-logo] | ![eslint-logo]<br>![stylelint-logo]<br>![prettier-logo]<br>![lefthook-logo] | ![next-logo] | ![react-logo]<br>![tailwind-logo]<br>![swr-logo]<br>![zod-logo]<br>![rhf-logo] | ![vitest-logo]<br>![storybook-logo] | ![githubactions-logo] |
 
 [node-logo]: https://img.shields.io/badge/-Node.js-5FA04E.svg?logo=nodedotjs&style=flat&logoColor=ffffff
-[npm-logo]: https://img.shields.io/badge/-npm-CB3837.svg?logo=npm&style=flat&logoColor=ffffff
+[pnpm-logo]: https://img.shields.io/badge/-pnpm-F69220.svg?logo=npm&style=flat&logoColor=ffffff
+[ts-logo]: https://img.shields.io/badge/-TypeScript-3178C6.svg?logo=typescript&style=flat&logoColor=ffffff
+[sass-logo]: https://img.shields.io/badge/-Sass-CC6699.svg?logo=sass&style=flat&logoColor=ffffff
 [eslint-logo]: https://img.shields.io/badge/-ESLint-4B32C3.svg?logo=eslint&style=flat&logoColor=ffffff
 [stylelint-logo]: https://img.shields.io/badge/-Stylelint-263238.svg?logo=stylelint&style=flat&logoColor=ffffff
 [prettier-logo]: https://img.shields.io/badge/-Prettier-F7B93E.svg?logo=prettier&style=flat&logoColor=000000
-[lefthook-logo]: https://img.shields.io/badge/-Lefthook-FF1E1E.svg?logo=lefthook&style=flat&logoColor=000000
-[ts-logo]: https://img.shields.io/badge/-TypeScript-3178C6.svg?logo=typescript&style=flat&logoColor=ffffff
-[sass-logo]: https://img.shields.io/badge/-Sass-CC6699.svg?logo=sass&style=flat&logoColor=ffffff
+[lefthook-logo]: https://img.shields.io/badge/-Lefthook-FF1E1E.svg?logo=lefthook&style=flat&logoColor=ffffff
 [next-logo]: https://img.shields.io/badge/-Next.js-000000.svg?logo=nextdotjs&style=flat&logoColor=ffffff
 [react-logo]: https://img.shields.io/badge/-React-61DAFB.svg?logo=react&style=flat&logoColor=000000
 [tailwind-logo]: https://img.shields.io/badge/-Tailwind%20CSS-06B6D4.svg?logo=tailwindcss&style=flat&logoColor=ffffff
@@ -28,10 +28,10 @@
 
 ### Other
 
+- [next-themes](https://github.com/pacocoursey/next-themes)
 - [framer-motion](https://www.framer.com/motion)
 - [tailwind-variants](https://www.tailwind-variants.org)
 - [clsx & tailwind-merge](./src/utils/cn.ts)
-- [next-themes](https://github.com/pacocoursey/next-themes)
 
 ## Development
 
@@ -42,8 +42,8 @@
 ### Required
 
 ```ini
-node = ">=20.18"
-npm = ">=10.9"
+node = ">=22"
+pnpm = ">=10"
 ```
 
 > [!TIP]
@@ -65,7 +65,7 @@ npm = ">=10.9"
 #### Installing Packages
 
 ```sh
-npm i
+pnpm i
 ```
 
 > [!IMPORTANT]
@@ -79,31 +79,41 @@ npm i
 #### Start Development Server
 
 ```sh
-npm run dev
+pnpm dev
 ```
 
 #### Linting
 
 ```sh
-npm run lint
+pnpm lint
 ```
 
 #### Formatting Code
 
 ```sh
-npm run format
+pnpm format
 ```
+
+#### Runs linter and formatter
+
+```sh
+pnpm check
+```
+
+> [!NOTE]
+>
+> Commands related to `lint`, `format`, and `check` perform similar operations to [Biome](https://biomejs.dev/reference/cli/#biome-check).
 
 #### Running Storybook (UI component tests)
 
 ```sh
-npm run sb
+pnpm sb
 ```
 
 #### Running Tests
 
 ```sh
-npm run test
+pnpm test
 ```
 
 > [!TIP]

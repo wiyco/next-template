@@ -4,36 +4,32 @@ on:
     branches:
       - main
       - develop
-    paths-ignore:
-      - "**/*.md"
-      - ".git*"
-      - ".vscode/**"
+    paths:
+      - "src/**"
+      - "test/**"
+      - "package.json"
+      - "pnpm-lock.yaml"
+      - ".github/workflows/test.yml"
 
 jobs:
-  test:
-    name: npm run test
+  vitest:
+    name: Vitest
     runs-on: ubuntu-latest
     steps:
-      - name: Clone repository
+      - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Enable Corepack
+        run: corepack enable
 
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
-          cache: "npm"
+          node-version: "22"
+          cache: "pnpm"
 
-      - name: Cache packages
-        uses: actions/cache@v4
-        id: cache_npm_packages
-        env:
-          cache-name: cache-npm-packages
-        with:
-          path: "**/node_modules"
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+      - name: Install dependencies
+        run: pnpm i --frozen-lockfile
 
-      - name: Install packages
-        if: ${{ steps.cache_npm_packages.outputs.cache-hit != 'true' }}
-        run: npm i
-      - name: Run test
-        run: npm run test
+      - name: Run Vitest tests
+        run: pnpm vitest --watch=false

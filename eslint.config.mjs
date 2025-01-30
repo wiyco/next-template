@@ -29,7 +29,7 @@ const config = ts.config(
     files: ["**/*.{js,jsx,ts,tsx}", "**/*.{cjs,mjs,cts,mts}"],
   },
   {
-    ignores: [".next/"], // + Default ignores ["**/node_modules/", ".git/"]
+    ignores: [".next/", "out/", "build/"], // + Default ignores ["**/node_modules/", ".git/"]
   },
   // plugin:@next/next/recommended
   // Do not use `next/core-web-vitals` because it has duplicate rules with `plugin:react/recommended`, `plugin:react-hooks/recommended`, etc.
@@ -82,7 +82,7 @@ const config = ts.config(
       "import/no-duplicates": "warn",
     },
     settings: {
-      "import/internal-regex": "^@/",
+      "import/internal-regex": "^(@|~)/",
     },
   },
   // plugins: ["unused-imports"] - Recommended configuration

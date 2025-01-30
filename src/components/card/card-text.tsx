@@ -16,7 +16,7 @@ const CardText = forwardRef<HTMLParagraphElement, CardTextProps>(
   ({ className, children, ...props }, ref) => {
     return (
       <p ref={ref} className={cn(variants(), className)} {...props}>
-        <span className="line-clamp-3 whitespace-pre-line leading-relaxed">
+        <span className="line-clamp-3 leading-relaxed whitespace-pre-line">
           {children}
         </span>
       </p>
