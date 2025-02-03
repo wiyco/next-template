@@ -1,0 +1,69 @@
+# https://docs.github.com/code-security/dependabot/working-with-dependabot/dependabot-options-reference
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    open-pull-requests-limit: 3
+    schedule:
+      interval: "weekly"
+      day: "sunday"
+      time: "10:00"
+      timezone: "Asia/Tokyo"
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    open-pull-requests-limit: 10
+    schedule:
+      interval: "weekly"
+      day: "sunday"
+      time: "10:00"
+      timezone: "Asia/Tokyo"
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
+    groups:
+      next:
+        update-types: ["major", "minor", "patch"]
+        patterns:
+          - "next"
+          - "@next/*"
+      storybook:
+        update-types: ["major", "minor", "patch"]
+        patterns:
+          - "storybook"
+          - "@storybook/*"
+      react:
+        update-types: ["major", "minor", "patch"]
+        patterns:
+          - "react"
+          - "react-dom"
+          - "@types/react*"
+      eslint:
+        update-types: ["major", "minor", "patch"]
+        patterns:
+          - "eslint"
+          - "typescript-eslint"
+          - "@eslint/*"
+          - "*eslint-plugin*"
+          - "*eslint-config*"
+      stylelint:
+        update-types: ["major", "minor", "patch"]
+        patterns:
+          - "stylelint"
+          - "stylelint-scss"
+          - "*stylelint-config*"
+      prettier:
+        update-types: ["major", "minor", "patch"]
+        patterns:
+          - "prettier"
+          - "*prettier-plugin*"
+      deps:
+        dependency-type: "production"
+        update-types: ["minor", "patch"]
+        patterns:
+          - "*"
+      dev-deps:
+        dependency-type: "development"
+        update-types: ["minor", "patch"]
+        patterns:
+          - "*"
