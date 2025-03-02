@@ -3,7 +3,7 @@
   "version": "1.0.0-0",
   "private": true,
   "engines": {
-    "node": ">=22",
+    "node": ">=20",
     "npm": "please use \"pnpm\" to install dependencies 🐢"
   },
   "packageManager": "pnpm@10.0.0",
