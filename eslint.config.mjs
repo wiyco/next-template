@@ -9,6 +9,7 @@ import { flatConfigs as importflatConfigs } from "eslint-plugin-import";
 import jestDom from "eslint-plugin-jest-dom";
 import jsxA11y from "eslint-plugin-jsx-a11y";
 import react from "eslint-plugin-react";
+import reactHooks from "eslint-plugin-react-hooks";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 import storybook from "eslint-plugin-storybook";
 import testingLibrary from "eslint-plugin-testing-library";
@@ -50,7 +51,7 @@ const config = ts.config(
     },
   },
   // plugin:react-hooks/recommended
-  ...fixupConfigRules(compat.extends("plugin:react-hooks/recommended")), // Replace "plugin:" syntax when flat config is supported
+  reactHooks.configs["recommended-latest"],
   // plugin:jsx-a11y/recommended
   jsxA11y.flatConfigs.recommended,
   // plugin:@vitest/recommended
