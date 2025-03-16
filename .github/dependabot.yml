@@ -18,28 +18,28 @@ updates:
       day: "sunday"
       time: "10:00"
       timezone: "Asia/Tokyo"
-    ignore:
-      - dependency-name: "*"
-        update-types: ["version-update:semver-major"]
+    # ignore:
+    #   - dependency-name: "*"
+    #     update-types: ["version-update:semver-major"]
     groups:
       next:
-        update-types: ["major", "minor", "patch"]
+        update-types: ["minor", "patch"]
         patterns:
           - "next"
           - "@next/*"
       storybook:
-        update-types: ["major", "minor", "patch"]
+        update-types: ["minor", "patch"]
         patterns:
           - "storybook"
           - "@storybook/*"
       react:
-        update-types: ["major", "minor", "patch"]
+        update-types: ["minor", "patch"]
         patterns:
           - "react"
           - "react-dom"
           - "@types/react*"
       eslint:
-        update-types: ["major", "minor", "patch"]
+        update-types: ["minor", "patch"]
         patterns:
           - "eslint"
           - "typescript-eslint"
@@ -47,13 +47,13 @@ updates:
           - "*eslint-plugin*"
           - "*eslint-config*"
       stylelint:
-        update-types: ["major", "minor", "patch"]
+        update-types: ["minor", "patch"]
         patterns:
           - "stylelint"
           - "stylelint-scss"
           - "*stylelint-config*"
       prettier:
-        update-types: ["major", "minor", "patch"]
+        update-types: ["minor", "patch"]
         patterns:
           - "prettier"
           - "*prettier-plugin*"
