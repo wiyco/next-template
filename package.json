@@ -72,7 +72,7 @@
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
-    "eslint-plugin-storybook": "^0.11.6",
+    "eslint-plugin-storybook": "^0.12.0",
     "eslint-plugin-testing-library": "^7.1.1",
     "eslint-plugin-unused-imports": "^4.1.4",
     "jsdom": "^26.0.0",
@@ -89,7 +89,7 @@
     "stylelint-scss": "^6.11.1",
     "tailwindcss": "^4.0.15",
     "typescript": "^5.8.2",
-    "typescript-eslint": "^8.27.0",
+    "typescript-eslint": "^8.28.0",
     "vite-tsconfig-paths": "^5.1.4",
     "vitest": "^3.0.9"
   }
