@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@hookform/resolvers':
         specifier: ^5.2.2
-        version: 5.2.2(react-hook-form@7.66.0(react@19.2.0))
+        version: 5.2.2(react-hook-form@7.66.1(react@19.2.0))
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -30,8 +30,8 @@ importers:
         specifier: ^19.2.0
         version: 19.2.0(react@19.2.0)
       react-hook-form:
-        specifier: ^7.66.0
-        version: 7.66.0(react@19.2.0)
+        specifier: ^7.66.1
+        version: 7.66.1(react@19.2.0)
       swr:
         specifier: ^2.3.6
         version: 2.3.6(react@19.2.0)
@@ -39,8 +39,8 @@ importers:
         specifier: ^3.4.0
         version: 3.4.0
       tailwind-variants:
-        specifier: ^3.1.1
-        version: 3.1.1(tailwind-merge@3.4.0)(tailwindcss@4.1.17)
+        specifier: ^3.2.2
+        version: 3.2.2(tailwind-merge@3.4.0)(tailwindcss@4.1.17)
       zod:
         specifier: ^4.1.12
         version: 4.1.12
@@ -4749,8 +4749,8 @@ packages:
     peerDependencies:
       react: ^19.2.0
 
-  react-hook-form@7.66.0:
-    resolution: {integrity: sha512-xXBqsWGKrY46ZqaHDo+ZUYiMUgi8suYu5kdrS20EG8KiL7VRQitEbNjm+UcrDYrNi1YLyfpmAeGjCZYXLT9YBw==}
+  react-hook-form@7.66.1:
+    resolution: {integrity: sha512-2KnjpgG2Rhbi+CIiIBQQ9Df6sMGH5ExNyFl4Hw9qO7pIqMBR8Bvu9RQyjl3JM4vehzCh9soiNUM/xYMswb2EiA==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18 || ^19
@@ -5375,8 +5375,8 @@ packages:
   tailwind-merge@3.4.0:
     resolution: {integrity: sha512-uSaO4gnW+b3Y2aWoWfFpX62vn2sR3skfhbjsEnaBI81WD1wBLlHZe5sWf0AqjksNdYTbGBEd0UasQMT3SNV15g==}
 
-  tailwind-variants@3.1.1:
-    resolution: {integrity: sha512-ftLXe3krnqkMHsuBTEmaVUXYovXtPyTK7ckEfDRXS8PBZx0bAUas+A0jYxuKA5b8qg++wvQ3d2MQ7l/xeZxbZQ==}
+  tailwind-variants@3.2.2:
+    resolution: {integrity: sha512-Mi4kHeMTLvKlM98XPnK+7HoBPmf4gygdFmqQPaDivc3DpYS6aIY6KiG/PgThrGvii5YZJqRsPz0aPyhoFzmZgg==}
     engines: {node: '>=16.x', pnpm: '>=7.x'}
     peerDependencies:
       tailwind-merge: '>=3.0.0'
@@ -6972,10 +6972,10 @@ snapshots:
       '@eslint/core': 0.17.0
       levn: 0.4.1
 
-  '@hookform/resolvers@5.2.2(react-hook-form@7.66.0(react@19.2.0))':
+  '@hookform/resolvers@5.2.2(react-hook-form@7.66.1(react@19.2.0))':
     dependencies:
       '@standard-schema/utils': 0.3.0
-      react-hook-form: 7.66.0(react@19.2.0)
+      react-hook-form: 7.66.1(react@19.2.0)
 
   '@humanfs/core@0.19.1': {}
 
@@ -10775,7 +10775,7 @@ snapshots:
       react: 19.2.0
       scheduler: 0.27.0
 
-  react-hook-form@7.66.0(react@19.2.0):
+  react-hook-form@7.66.1(react@19.2.0):
     dependencies:
       react: 19.2.0
 
@@ -11537,7 +11537,7 @@ snapshots:
 
   tailwind-merge@3.4.0: {}
 
-  tailwind-variants@3.1.1(tailwind-merge@3.4.0)(tailwindcss@4.1.17):
+  tailwind-variants@3.2.2(tailwind-merge@3.4.0)(tailwindcss@4.1.17):
     dependencies:
       tailwindcss: 4.1.17
     optionalDependencies:
