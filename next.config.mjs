@@ -1,11 +1,13 @@
-import type { NextConfig } from "next";
-import { dirname, join } from "path";
-import { fileURLToPath } from "url";
+// @ts-check
+
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-const config: NextConfig = {
+/** @type {import("next").NextConfig} */
+const config = {
   /** @see {@link https://nextjs.org/docs/app/building-your-application/styling/sass} */
   sassOptions: {
     implementation: "sass-embedded",
