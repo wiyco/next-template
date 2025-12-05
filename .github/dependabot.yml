@@ -9,6 +9,10 @@ updates:
       day: "sunday"
       time: "10:00"
       timezone: "Asia/Tokyo"
+    cooldown:
+      default-days: 5
+      include:
+        - '*'
 
   - package-ecosystem: "npm"
     directory: "/"
@@ -18,28 +22,35 @@ updates:
       day: "sunday"
       time: "10:00"
       timezone: "Asia/Tokyo"
+    cooldown:
+      default-days: 5
+      semver-patch-days: 3
+      semver-minor-days: 7
+      semver-major-days: 15
+      include:
+        - '*'
     # ignore:
     #   - dependency-name: "*"
     #     update-types: ["version-update:semver-major"]
     groups:
       next:
-        update-types: ["minor", "patch"]
+        update-types: ["minor", "patch", "major"]
         patterns:
           - "next"
           - "@next/*"
       storybook:
-        update-types: ["minor", "patch"]
+        update-types: ["minor", "patch", "major"]
         patterns:
           - "storybook"
           - "@storybook/*"
       react:
-        update-types: ["minor", "patch"]
+        update-types: ["minor", "patch", "major"]
         patterns:
           - "react"
           - "react-dom"
           - "@types/react*"
       eslint:
-        update-types: ["minor", "patch"]
+        update-types: ["minor", "patch", "major"]
         patterns:
           - "eslint"
           - "typescript-eslint"
@@ -47,13 +58,13 @@ updates:
           - "*eslint-plugin*"
           - "*eslint-config*"
       stylelint:
-        update-types: ["minor", "patch"]
+        update-types: ["minor", "patch", "major"]
         patterns:
           - "stylelint"
           - "stylelint-scss"
           - "*stylelint-config*"
       prettier:
-        update-types: ["minor", "patch"]
+        update-types: ["minor", "patch", "major"]
         patterns:
           - "prettier"
           - "*prettier-plugin*"
