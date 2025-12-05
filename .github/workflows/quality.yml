@@ -10,30 +10,6 @@ on:
       - develop
 
 jobs:
-  next:
-    name: Next.js
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v6
-
-      - name: Enable Corepack
-        run: |
-          npm i -g corepack@latest
-          corepack enable
-
-      - name: Set up Node
-        uses: actions/setup-node@v6
-        with:
-          node-version: "22"
-          cache: "pnpm"
-
-      - name: Install dependencies
-        run: pnpm i --frozen-lockfile
-
-      - name: Run Next.js lint checks
-        run: pnpm lint:next
-
   eslint:
     name: ESLint
     runs-on: ubuntu-latest
