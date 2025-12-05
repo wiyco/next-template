@@ -13,6 +13,7 @@ const config = {
     implementation: "sass-embedded",
     includePaths: [join(__dirname, "src/styles")],
   },
+  reactCompiler: true,
 };
 
 export default config;
