@@ -7,6 +7,15 @@
     "source.fixAll.stylelint": "explicit",
     "source.organizeImports": "never"
   },
+  "tailwindCSS.classAttributes": [
+    "class",
+    "className",
+    "ngClass",
+    "class:list",
+    "classNames"
+  ],
+  "tailwindCSS.classFunctions": ["tv", "cn"],
+  "tailwindCSS.experimental.configFile": "src/styles/tailwind.scss",
   "eslint.validate": [
     "javascript",
     "javascriptreact",
