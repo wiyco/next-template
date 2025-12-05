@@ -43,6 +43,8 @@ updates:
         patterns:
           - "storybook"
           - "@storybook/*"
+          - "@chromatic-com/storybook"
+          - "eslint-plugin-storybook"
       react:
         update-types: ["minor", "patch", "major"]
         patterns:
