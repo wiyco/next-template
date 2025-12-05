@@ -12,7 +12,7 @@ updates:
     cooldown:
       default-days: 5
       include:
-        - '*'
+        - "*"
 
   - package-ecosystem: "npm"
     directory: "/"
@@ -28,7 +28,7 @@ updates:
       semver-minor-days: 7
       semver-major-days: 15
       include:
-        - '*'
+        - "*"
     # ignore:
     #   - dependency-name: "*"
     #     update-types: ["version-update:semver-major"]
