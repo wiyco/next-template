@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/nextjs-vite";
 
 import { Card, CardFooter, CardImage, CardText } from "@/components/card";
 import type { AlignOptions } from "@/components/card/card-image";
