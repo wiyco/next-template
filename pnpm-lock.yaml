@@ -166,8 +166,8 @@ importers:
         specifier: ^16.26.1
         version: 16.26.1(typescript@5.9.3)
       stylelint-config-recess-order:
-        specifier: ^6.1.0
-        version: 6.1.0(stylelint@16.26.1(typescript@5.9.3))
+        specifier: ^7.4.0
+        version: 7.4.0(stylelint-order@6.0.4(stylelint@16.26.1(typescript@5.9.3)))(stylelint@16.26.1(typescript@5.9.3))
       stylelint-config-standard:
         specifier: ^39.0.1
         version: 39.0.1(stylelint@16.26.1(typescript@5.9.3))
@@ -3663,10 +3663,11 @@ packages:
       babel-plugin-macros:
         optional: true
 
-  stylelint-config-recess-order@6.1.0:
-    resolution: {integrity: sha512-0rGZgJQjUKqv1PXZnRJxr13f3hb3i2snx2nIL6luDWUf4nD3BAweB8noS7jdfBQ56HQG3RKSF0a+MAHfBGFxgw==}
+  stylelint-config-recess-order@7.4.0:
+    resolution: {integrity: sha512-W3G517cBaMDYRX5Fzhro4fhRkkLafLgVSPfQnhxbiLyMnbLq47RMF/NRaOJ4OQsKWYhsIHOIc2Q3VL0X3Q7oPg==}
     peerDependencies:
-      stylelint: '>=16'
+      stylelint: '>=16.18'
+      stylelint-order: '>=7'
 
   stylelint-config-recommended-scss@16.0.2:
     resolution: {integrity: sha512-aUTHhPPWCvFyWaxtckJlCPaXTDFsp4pKO8evXNCsW9OwsaUWyMd6jvcUhSmfGWPrTddvzNqK4rS/UuSLcbVGdQ==}
@@ -7791,7 +7792,7 @@ snapshots:
     optionalDependencies:
       '@babel/core': 7.28.5
 
-  stylelint-config-recess-order@6.1.0(stylelint@16.26.1(typescript@5.9.3)):
+  stylelint-config-recess-order@7.4.0(stylelint-order@6.0.4(stylelint@16.26.1(typescript@5.9.3)))(stylelint@16.26.1(typescript@5.9.3)):
     dependencies:
       stylelint: 16.26.1(typescript@5.9.3)
       stylelint-order: 6.0.4(stylelint@16.26.1(typescript@5.9.3))
