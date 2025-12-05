@@ -60,6 +60,7 @@
     "@vitejs/plugin-react": "^5.1.1",
     "@vitest/eslint-plugin": "^1.5.1",
     "autoprefixer": "^10.4.22",
+    "babel-plugin-react-compiler": "^1.0.0",
     "eslint": "^9.39.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
