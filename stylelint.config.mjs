@@ -10,7 +10,13 @@ const config = {
     "at-rule-no-deprecated": [
       true,
       {
-        ignoreAtRules: ["apply"], // Allow `@apply` directive
+        ignoreAtRules: ["apply"],
+      },
+    ],
+    "scss/at-rule-no-unknown": [
+      true,
+      {
+        ignoreAtRules: ["custom-variant", "theme", "source", "plugin"],
       },
     ],
   },
