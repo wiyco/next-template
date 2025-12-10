@@ -21,7 +21,7 @@
     "format": "prettier './**/*.{js,jsx,ts,tsx,cjs,mjs,cts,mts,css,scss,md,mdx,yaml,yml,json,html}' --log-level=warn --write",
     "check": "pnpm lint:es && pnpm lint:style && pnpm format:check",
     "check:fix": "pnpm fix:es && pnpm fix:style && pnpm format",
-    "test": "vitest --watch",
+    "test": "vitest",
     "sb": "storybook dev -p 6006",
     "sb:build": "storybook build"
   },
