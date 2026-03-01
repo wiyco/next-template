@@ -2,7 +2,7 @@
   "recommendations": [
     "dbaeumer.vscode-eslint",
     "stylelint.vscode-stylelint",
-    "esbenp.prettier-vscode",
+    "prettier.prettier-vscode",
     "bradlc.vscode-tailwindcss",
     "github.vscode-github-actions"
   ]
