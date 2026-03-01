@@ -79,7 +79,7 @@
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.7.1",
     "sass-embedded": "^1.97.3",
-    "storybook": "^10.1.11",
+    "storybook": "^10.2.10",
     "stylelint": "^16.26.1",
     "stylelint-config-recess-order": "^7.4.0",
     "stylelint-config-standard": "^39.0.1",
